@@ -1,5 +1,7 @@
-int hallEffect = 4;
+/*#include SoftwareSerial.h*/
 
+int sensor1Pin = 4;
+float sensorVals[] = {0};
 
 void setup() {
   // initialize serial communication at 9600 bits per second:
@@ -11,8 +13,8 @@ void setup() {
 // the loop routine runs over and over again forever:
 void loop() {
   // read the input pin:
-  int State = digitalRead(hallEffect);
-  // print out the state of the button:
-  Serial.println(State);
+  sensorVal[4] = digitalRead(sensor1Pin);
+
+ Serial.print(sensors[0]);
   delay(100);       
 }
